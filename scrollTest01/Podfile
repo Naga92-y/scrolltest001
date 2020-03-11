@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'scrollTest01' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for scrollTest01
+    pod 'ImageSlideshow', '1.8.3'
+    pod 'ImageSlideshow/AFURL'
+    pod 'ImageSlideshow/Alamofire'
+    pod 'ImageSlideshow/SDWebImage'
+    pod 'ImageSlideshow/Kingfisher'
+
+end
