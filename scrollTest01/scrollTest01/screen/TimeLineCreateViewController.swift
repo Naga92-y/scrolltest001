@@ -17,6 +17,7 @@ class TimeLineCreateViewController: UIViewController,UIImagePickerControllerDele
     @IBOutlet weak var postText: UITextView!
     @IBOutlet weak var imageSlideShow: ImageSlideshow!
     @IBOutlet weak var scroll: UIScrollView!
+    @IBOutlet weak var postTextViewHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,6 +64,9 @@ class TimeLineCreateViewController: UIViewController,UIImagePickerControllerDele
         let height = postText.sizeThatFits(CGSize(width: postText.frame.size.width, height: CGFloat.greatestFiniteMagnitude)).height
         postText.heightAnchor.constraint(equalToConstant: height).isActive = true
         scroll.heightAnchor.constraint(equalToConstant: height).isActive = true
+
+        postText.sizeToFit()
+        postTextViewHeight.constant = postText.contentSize.height
         
     }
     

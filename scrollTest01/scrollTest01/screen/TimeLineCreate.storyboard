@@ -137,6 +137,7 @@
                         <outlet property="imageSlideShow" destination="FDr-mF-Sje" id="ych-Gj-yMY"/>
                         <outlet property="postBtn" destination="BXp-Zp-4Tu" id="bV4-YR-AbL"/>
                         <outlet property="postText" destination="wK5-AG-oan" id="TeO-My-ujg"/>
+                        <outlet property="postTextViewHeight" destination="3q8-HQ-jd2" id="XxG-6l-YMU"/>
                         <outlet property="scroll" destination="Klj-he-BXO" id="SXl-OI-BUJ"/>
                         <outlet property="tabView" destination="8H0-En-C08" id="Q7H-R5-WZF"/>
                     </connections>
