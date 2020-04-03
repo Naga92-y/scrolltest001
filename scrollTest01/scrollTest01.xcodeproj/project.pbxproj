@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B96E612B24375298007A409B /* TimeLineCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96E612A24375298007A409B /* TimeLineCreate.swift */; };
+		B96E612D243752D0007A409B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96E612C243752D0007A409B /* APIClient.swift */; };
 		B98A20EF2418B6F10064AF27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98A20EE2418B6F10064AF27 /* AppDelegate.swift */; };
 		B98A20F12418B6F10064AF27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98A20F02418B6F10064AF27 /* SceneDelegate.swift */; };
 		B98A20F82418B6F60064AF27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98A20F72418B6F60064AF27 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		50D05D04D520B1DB7A50D287 /* Pods_scrollTest01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scrollTest01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EED20C8C9CA412DA49D5B3C /* Pods-scrollTest01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrollTest01.debug.xcconfig"; path = "Target Support Files/Pods-scrollTest01/Pods-scrollTest01.debug.xcconfig"; sourceTree = "<group>"; };
+		B96E612A24375298007A409B /* TimeLineCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineCreate.swift; sourceTree = "<group>"; };
+		B96E612C243752D0007A409B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		B98A20EB2418B6F10064AF27 /* scrollTest01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrollTest01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98A20EE2418B6F10064AF27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B98A20F02418B6F10064AF27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B96E6125243751CF007A409B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B96E612C243752D0007A409B /* APIClient.swift */,
+				B96E612824375244007A409B /* Modal */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B96E612824375244007A409B /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				B96E612A24375298007A409B /* TimeLineCreate.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
 		B98A20E22418B6F10064AF27 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +106,7 @@
 				B98A20F72418B6F60064AF27 /* Assets.xcassets */,
 				B98A20F92418B6F60064AF27 /* LaunchScreen.storyboard */,
 				B98A20FC2418B6F60064AF27 /* Info.plist */,
+				B96E6125243751CF007A409B /* API */,
 				B98A21022418D1900064AF27 /* screen */,
 			);
 			path = scrollTest01;
@@ -217,6 +239,8 @@
 				B98A20EF2418B6F10064AF27 /* AppDelegate.swift in Sources */,
 				B98A20F12418B6F10064AF27 /* SceneDelegate.swift in Sources */,
 				B98A210A2418D3360064AF27 /* TimeLineCreateViewController.swift in Sources */,
+				B96E612D243752D0007A409B /* APIClient.swift in Sources */,
+				B96E612B24375298007A409B /* TimeLineCreate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

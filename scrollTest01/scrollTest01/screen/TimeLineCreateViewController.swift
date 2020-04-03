@@ -88,6 +88,35 @@ class TimeLineCreateViewController: UIViewController,UIImagePickerControllerDele
     @IBAction func didTapPostBtn(_ sender: Any) {
         postText.resignFirstResponder()
         dismiss(animated: true, completion: nil)
+        
+        let request = TimeLineCreateRequest.init()
+        
+        request.uuid = uuid
+        //どうやったらいいかわからない場所
+        request.image_1 = imageSlideShow.images[0]
+        request.image_2 = imageSlideShow.images[0]
+        request.image_3 = imageSlideShow.images[0]
+        request.image_4 = imageSlideShow.images[0]
+        request.image_5 = imageSlideShow.images[0]
+        
+       
+        
+        var inputers: [InputSource] = imageSlideShow.images
+        APIClient<TimeLineCreateResponse>().getApiResponse(type: .REQUEST_TIMELINE_CREATE, params: request.toJSON()) { (result) in
+          switch result {
+           case .Success(let response):
+            DLog(message: "success")
+            if response.data != nil {
+              print("成功")
+            }
+            else {
+              print("失敗")
+            }
+          default:
+            print("失敗")
+          }
+        }
+
     }
     
     //     TODO: フォトライブラリーを下に表示・追加したらheight出す
@@ -155,9 +184,11 @@ class TimeLineCreateViewController: UIViewController,UIImagePickerControllerDele
         let keyboardViewEndFrame = view.convert(keyboardScreenEndFrame, from: view.window)
         if notification.name == UIResponder.keyboardWillHideNotification {
             postText.contentInset = .zero
+            scroll.contentInset.bottom = .zero
+            
         } else {
+            scroll.contentInset.bottom = keyboardViewEndFrame.height - view.safeAreaInsets.bottom
             postText.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardViewEndFrame.height + view.safeAreaInsets.bottom + tabView.frame.height , right: 0)
-            print(postText.contentInset)
         }
         postText.scrollIndicatorInsets = postText.contentInset
         let selectedRange = postText.selectedRange

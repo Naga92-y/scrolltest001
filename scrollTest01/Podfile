@@ -11,5 +11,6 @@ target 'scrollTest01' do
     pod 'ImageSlideshow/Alamofire'
     pod 'ImageSlideshow/SDWebImage'
     pod 'ImageSlideshow/Kingfisher'
+    pod 'ObjectMapper', '~> 3.4'
 
 end

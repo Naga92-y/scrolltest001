@@ -32,12 +32,13 @@ PODS:
   - ImageSlideshow/SDWebImage (1.8.3):
     - ImageSlideshow/Core
     - SDWebImage (>= 3.7)
-  - Kingfisher (5.13.1):
-    - Kingfisher/Core (= 5.13.1)
-  - Kingfisher/Core (5.13.1)
-  - SDWebImage (5.5.2):
-    - SDWebImage/Core (= 5.5.2)
-  - SDWebImage/Core (5.5.2)
+  - Kingfisher (5.13.3):
+    - Kingfisher/Core (= 5.13.3)
+  - Kingfisher/Core (5.13.3)
+  - ObjectMapper (3.5.2)
+  - SDWebImage (5.6.1):
+    - SDWebImage/Core (= 5.6.1)
+  - SDWebImage/Core (5.6.1)
 
 DEPENDENCIES:
   - ImageSlideshow (= 1.8.3)
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - ImageSlideshow/Alamofire
   - ImageSlideshow/Kingfisher
   - ImageSlideshow/SDWebImage
+  - ObjectMapper (~> 3.4)
 
 SPEC REPOS:
   trunk:
@@ -53,6 +55,7 @@ SPEC REPOS:
     - AlamofireImage
     - ImageSlideshow
     - Kingfisher
+    - ObjectMapper
     - SDWebImage
 
 SPEC CHECKSUMS:
@@ -60,9 +63,10 @@ SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
   ImageSlideshow: 4694d7d699a1549582e7cc631fb392d8f91630f3
-  Kingfisher: f33a848445e33c543620812158dc5d47f6bf90df
-  SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
+  Kingfisher: d2b3d6a7200c93b34de9afcdf25c8dd9282ec277
+  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
+  SDWebImage: 7edb9c3ea661e77a66661f7f044de8c1b55d1120
 
-PODFILE CHECKSUM: 3f506f444e3507d000f0adb6e620ee173df05914
+PODFILE CHECKSUM: 3d45663bdd564770d68841e6783066be43cd5d52
 
 COCOAPODS: 1.8.4
